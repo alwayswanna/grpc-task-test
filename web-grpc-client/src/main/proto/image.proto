@@ -27,7 +27,17 @@ message FileRequest{
   string message = 1;
 }
 
+message DownloadFileRequest{
+  string filename = 1;
+}
+
+message DownloadFileResponse{
+  bytes data = 1;
+  int32 size = 2;
+}
+
 service ImageService{
   rpc UploadImage(stream ImageRequest) returns (ImageResponse);
   rpc CheckFiles(FileRequest) returns (FileResponse);
+  rpc DownloadFile(DownloadFileRequest) returns (stream DownloadFileResponse);
 }
