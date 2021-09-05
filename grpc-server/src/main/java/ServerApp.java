@@ -1,5 +1,6 @@
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import rpc.ImageServiceImpl;
 import rpc.ServiceRpcImpl;
 
 import java.io.IOException;
@@ -11,6 +12,7 @@ public class ServerApp {
 
         Server server = ServerBuilder.forPort(50051)
                 .addService(new ServiceRpcImpl())
+                .addService(new ImageServiceImpl())
                 .build();
 
         server.start();

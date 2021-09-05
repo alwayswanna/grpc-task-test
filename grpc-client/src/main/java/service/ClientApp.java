@@ -1,3 +1,5 @@
+package service;
+
 import a.gleb.service.GreetingServiceGrpc;
 import a.gleb.service.Service;
 import com.google.protobuf.ByteString;
@@ -7,6 +9,7 @@ import io.grpc.stub.StreamObserver;
 
 import java.io.*;
 import java.util.concurrent.TimeUnit;
+
 
 public class ClientApp {
 
@@ -91,7 +94,7 @@ public class ClientApp {
 
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void runner() throws InterruptedException {
         ClientApp clientApp = new ClientApp("localhost", 50051);
         try {
             clientApp.startStream("C:\\Users\\agleb\\Pictures\\test.png");
