@@ -67,6 +67,9 @@
                 <th>Filename:</th>
                 <th>File format:</th>
                 <th>Date creation:</th>
+                <th>
+                    <i class="material-icons">arrow_downward</i>
+                </th>
             </tr>
             </thead>
             <tbody>
@@ -74,14 +77,16 @@
                 <td th:text="${el.filename}"/>
                 <td th:text="${el.filetype}"/>
                 <td th:text="${el.dateCreation}"/>
-
+                </a>
+                <td>
+                    <a th:href="'/download_file/' + ${el.filename}" class="waves-effect waves-light btn" download>Download<a/>
+                </td>
             </tr>
             </tbody>
         </table>
     </div>
 
 </div>
-
 
 <script type="text/javascript" src="/static/js/materialize.min.js"></script>
 </body>
