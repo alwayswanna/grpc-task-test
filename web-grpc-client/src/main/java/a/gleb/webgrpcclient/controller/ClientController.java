@@ -13,11 +13,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
 @Controller
 @Slf4j
@@ -82,7 +80,6 @@ public class ClientController {
     @RequestMapping(value = "/download_file/{filename}", method = RequestMethod.GET)
     public @ResponseBody byte[] downloadFile(@PathVariable String filename) {
         ByteArrayOutputStream byteArrayOutputStream = imageService.downloadFile(filename);
-        System.out.println(byteArrayOutputStream.toByteArray());
         return byteArrayOutputStream.toByteArray();
     }
 

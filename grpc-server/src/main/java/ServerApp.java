@@ -20,5 +20,6 @@ public class ServerApp {
         System.out.println("Server start!");
 
         server.awaitTermination();
+        //TODO: create restrictions on uploading and downloading images
     }
 }

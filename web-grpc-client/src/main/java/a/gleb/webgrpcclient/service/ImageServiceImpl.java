@@ -53,7 +53,6 @@ public class ImageServiceImpl {
 
         StreamObserver<Image.ImageRequest> requestObserver = asyncStub.uploadImage(responseStreamObserver);
         try {
-            System.out.println(filename);
             try {
                 BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
                 int buffer_size = 512 * 1024;
