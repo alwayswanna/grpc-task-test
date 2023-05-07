@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ClientApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="grpc-task-test.grpc-client-app.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="a.gleb.grpcclientapp.GrpcClientAppApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

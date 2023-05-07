@@ -1,4 +1,4 @@
-# Test project with gRpc library:
+# grpc-task-test
 
-### Server - only gRpc
-### Client - web application (Spring MVC)
+1. client-app with Spring WebFlux
+2. server-app with grpc-server
