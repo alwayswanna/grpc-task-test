@@ -1,6 +1,5 @@
 .idea
 .gradle
-gradle
 
 grpc-server-app/build
 grpc-client-app/build
