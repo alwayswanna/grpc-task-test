@@ -1,0 +1,22 @@
+server:
+  port: 7474
+  error:
+    include-message: always
+    include-binding-errors: always
+
+client-config:
+  executor-config:
+    core-pool-size: 5
+    max-pool-size: 10
+    keep-alive-in-minutes: 1
+
+logging:
+  level:
+    root: info
+grpc:
+  client:
+    local-grpc-server:
+      address: 'static://127.0.0.1:3000'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="grpc-task-test.grpc-server-app.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="a.gleb.grpcserverapp.GrpcServerAppApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

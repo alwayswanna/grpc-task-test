@@ -1,0 +1,10 @@
+grpc:
+  server:
+    port: 3000
+
+server-config:
+  directory-to-save: "/var/tmp"
+
+logging:
+  level:
+    root: info
