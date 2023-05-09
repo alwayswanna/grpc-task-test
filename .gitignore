@@ -3,3 +3,7 @@
 
 grpc-server-app/build
 grpc-client-app/build
+/grpc-client-app/gradle/wrapper/gradle-wrapper.jar
+/grpc-server-app/gradle/wrapper/gradle-wrapper.jar
+/grpc-client-app/gradle/wrapper/gradle-wrapper.properties
+/grpc-server-app/gradle/wrapper/gradle-wrapper.properties
